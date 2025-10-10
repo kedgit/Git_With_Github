@@ -1,0 +1,58 @@
+
+// Git To GitHub 
+
+Q.1 Git (Local Repository)
+
+--> git is distributed version control tool that helps to track changes in code and allow multiple peoples to work on project together.
+i.e. git, Mercurial, Apache Subversion(svn),Bazzar,Perforce,
+
+Q.2 GitHub (Remote Repository )
+--> GitHub is website that stores git repository Remotely so you can share and collaborate with others.
+i.e. GitHub,GitLab,Bitbucket,SourceForge,AzureRepos.
+
+// Steps to Collaborate git and GitHub
+
+1.create repository on GitHub 
+
+--> Manually - Got to GitHub and create new repo.
+--> GitHub CLI - gh repo create my-repo --public 
+
+2.create repo locally
+
+3.initialize local repo by git to create .git file to track remote repo on GitHub
+--> go to directory
+    git init  (only once)
+
+4. copy remote repo url http or ssh from GitHub
+ 
+5. local repo connect to remote repo (only once)
+--> git remote add origin url
+
+6. add file from local to remote
+--> git add . (all files)
+--> git add file1 (specific file)
+
+7. commit the changes in code locally
+--> git commit -m "message(what and why changes did)" 
+
+8. push changes to remote
+--> git push origin (branch_name) main or master
+
+9.others can pull clone and contribute to the sane project using git commands.
+
+Note:
+Git - manages code locally.
+Guthub - Store And shares it online for collaboration.
+
+some basic git cmd
+
+1. git init - initialize a new git repo locally
+2. git clone <url> - copy an existing GitHub repo to your local system
+3. git status - checke current status of files (added,untracked,modified).
+4. git add file or . - stage files to committed.
+5. git commit -m "msg" - save changes to local repo with msg
+6. git remote add origin url - connect to remote repo before push
+7. git push origin branch(main/master) - upload local commits to GitHub repo
+8. git branch / git branch <name> - list out branches or create new one.
+9. git merge <branch> - merge another branch into current branch.
+10. git log - view commit history. 
