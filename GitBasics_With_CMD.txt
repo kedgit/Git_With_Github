@@ -60,3 +60,18 @@ some basic git cmd
 11. git commit --amend -m "local updated msg"  msg update locally before push to github.
 12. git commit --amend -m "then below cmd"   msg update remotely after push into github
 12. git commit --force origin master  "Remote update msg" 
+13. git remote -v to check remote repo which is connected to local
+
+14. rename localy in system and Stage the changes by git add
+	oldfilename newfilename
+	git add old new 
+	git commit to delete old and add new
+
+14. git mv oldfile newfile  to auto rename file and add
+
+15. git mv fiolder newfolder  
+	commit
+	push
+15. git add -A       rename folder manually
+	commit 
+	push 
