@@ -39,21 +39,21 @@ FileWriter			Write characters to a file
 BufferedReader		Read lines efficiently
 BufferedWriter		Write text efficiently
 
-🧠 Explanation:
+Explanation:
 
-Byte Streams:
+1.Byte Streams:
 
-Use InputStream and OutputStream
-Work with raw binary data (e.g., images, files, videos)
+--> Use InputStream and OutputStream
+--> Work with raw binary data (e.g., images, files, videos)
 
-Character Streams:
+2.Character Streams:
 
-Use Reader and Writer
-Work with text (character) data (e.g., .txt files)
+--> Use Reader and Writer
+--> Work with text (character) data (e.g., .txt files)
 
 Note:
-When you open a file, the OS gives Java a handle to the file and knows the file size.
-Every time you call read(), Java asks the OS to provide the next byte at the current position.
-The OS tracks the read position internally.
-When the read position reaches the file’s end (i.e., all bytes have been read), the OS signals there is no more data.
-Java’s FileInputStream.read() method then returns -1 to indicate EOF.
+- When you open a file, the OS gives Java a handle to the file and knows the file size.
+- Every time you call read(), Java asks the OS to provide the next byte at the current position.
+- The OS tracks the read position internally.
+- When the read position reaches the file’s end (i.e., all bytes have been read), the OS signals there is no more data.
+- Java’s FileInputStream.read() method then returns -1 to indicate EOF.
