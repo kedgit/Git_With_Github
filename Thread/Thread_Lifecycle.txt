@@ -1,0 +1,79 @@
+Thread
+definition -
+
+Thread : Thread is Smallest unit of process that executes independently but shares the same memory and resources of its parent process.
+ 	ex. in video player one thread plays video and while another one handles audio.both work in same process to keep video and audio in synchronise.
+
+Process : Process is an complete independent programe in execution that has its own memory space and system resource.
+ 	ex. when ms word and google open at same - each run seperate process with its own memory and resources.
+
+// Ways of Thread creation is 2
+
+1.	Extendind Thread Class
+2.	Runnable interface Implementing but interface have not start() so use Thread Class.Interface ref obj pass as parameter to thread class.
+
+// Steps to create Thread by Extending Thread Class
+
+1.	Create class And Extends Thread Class.
+2.	Override run() method.
+3.	Create Object of Your Class.
+4.	call start() method.
+
+// Steps of thread creation bu implementing runnable interface
+
+1.Create class that implementing Runnable interface
+2.Override run() method.
+3.Create Thread Object,passing runnable instance.
+4. call start() method.
+
+// Life Cycle Of Thread
+
+1.New
+2.Runnable
+3.Running
+4.Waiting/interrupt
+5.Terminated/dead.
+
+// methods of thread class
+
+Here's a list of all important methods of the Thread class in Java, along with brief descriptions for each. These methods come from the java.lang.Thread class and are commonly used in multithreaded programming.
+
+🔧 Thread Class Methods with Descriptions
+
+Method								Description
+
+start()				Starts the execution of the thread by calling the run() method in a new call stack.
+run()				Contains the code that defines the task of the thread. It is called when the thread starts. You can override it.
+sleep(long millis)		Static method that pauses the current thread for the specified number of milliseconds.
+sleep(long millis, int nanos)	Overloaded version of sleep() that allows finer control with nanosecond precision.
+join()				Waits for the thread to die (i.e., completes execution).
+join(long millis)		Waits for the thread to die for a specific time (in milliseconds).
+join(long millis, int nanos)	Waits for the thread to die for the specified time with nanosecond precision.
+isAlive()			Returns true if the thread is still running or hasn't finished.
+yield()				Static method that pauses the current thread to allow other threads of the same priority to execute.
+interrupt()			Interrupts a sleeping or waiting thread, causing InterruptedException.
+isInterrupted()			Checks if the thread has been interrupted (does not clear the flag).
+interrupted()			Static method that checks and clears the interrupted status of the current thread.
+getName()			Returns the name of the thread.
+setName(String name)		Sets a new name for the thread.
+getId()				Returns the unique ID of the thread.
+getPriority()			Returns the priority of the thread (range: 1 to 10).
+setPriority(int newPriority)	Sets the thread's priority.
+getState()			Returns the current execution state of the thread (e.g., NEW, RUNNABLE, BLOCKED, etc.).
+getThreadGroup()		Returns the thread group to which this thread belongs.
+activeCount()			Static method that returns the number of active threads in the current thread's group.
+currentThread()			Static method that returns a reference to the currently executing thread object.
+dumpStack()			Static method that prints the stack trace of the current thread.
+holdsLock(Object obj)		Static method that checks if the current thread holds the lock on the specified object.
+setDaemon(boolean on)		Marks the thread as a daemon thread (background thread). Must be called before start().
+isDaemon()			Checks if the thread is a daemon thread.
+checkAccess()			Determines if the current thread has permission to modify this thread.
+toString()			Returns a string representation of the thread, including its name, priority, and group.
+
+💡 Notes:
+
+1.	Methods like start(), run(), join() are instance methods and central to thread control.
+
+2. Static methods like sleep(), yield(), and currentThread() operate on the current executing thread.
+
+3. The thread lifecycle is controlled through start(), and observed via isAlive() or getState().
