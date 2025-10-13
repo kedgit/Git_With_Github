@@ -34,7 +34,8 @@ class firstthread extends Thread{
 public class Lifecycle {
 
 	// main thread not stop execution during child sleep state
-	
+	// if u want stop forcefully then use join
+	//@SuppressWarnings("deprecation")
 	public static void main(String[] args) throws InterruptedException {
 		
 		// object create thread go to new State
@@ -42,6 +43,12 @@ public class Lifecycle {
 		
 		// check state before calling
 		System.out.println("State of thread is: "+t.getState());
+		
+		// get thread priority
+		System.out.println("priority of thread: "+t.getPriority());
+		
+		// check id of thread
+		System.out.println("ID of Thread is: "+t.getId());
 		
 		// calling thread
 		t.start();
@@ -55,6 +62,8 @@ public class Lifecycle {
 		//thread in waiting state
 		System.out.println("State of thread is: "+t.getState());
 		
+		// check total threads
+		System.out.println("Count of thread in process is: "+t.activeCount());
 		// use join to wait until thread complete work
 		try {
 			t.join();
