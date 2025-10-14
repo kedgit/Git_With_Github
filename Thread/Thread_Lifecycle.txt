@@ -9,21 +9,21 @@ Process : Process is an complete independent programe in execution that has its 
 
 // Ways of Thread creation is 2
 
-1.	Extendind Thread Class
-2.	Runnable interface Implementing but interface have not start() so use Thread Class.Interface ref obj pass as parameter to thread class.
+1. Extendind Thread Class
+2. Runnable interface Implementing but interface have not start() so use Thread          	Class.Interface ref obj pass as parameter to thread class.
 
 // Steps to create Thread by Extending Thread Class
 
-1.	Create class And Extends Thread Class.
-2.	Override run() method.
-3.	Create Object of Your Class.
-4.	call start() method.
+1. Create class And Extends Thread Class.
+2. Override run() method.
+3. Create Object of Your Class.
+4. call start() method.
 
 // Steps of thread creation bu implementing runnable interface
 
-1.Create class that implementing Runnable interface
-2.Override run() method.
-3.Create Thread Object,passing runnable instance.
+1. Create class that implementing Runnable interface
+2. Override run() method.
+3. Create Thread Object,passing runnable instance.
 4. call start() method.
 
 // Life Cycle Of Thread
