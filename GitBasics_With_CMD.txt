@@ -99,3 +99,11 @@ some basic git cmd
 
 18. git pull origin main	To fetches latest changes remotely into local system.
 
+19. git branch -a  		list out all branches local + remote
+
+20. git branch -r		list out remote branch
+
+21. git branch 			list out local branch
+
+22. git checkout 		switch branch localy
+
