@@ -102,17 +102,17 @@ public class List_Interface_ArrayList {
 				}
 				
 				
-//			System.out.println("After remove: "+list1);	
-//			// 10. isempty -
-//			System.out.println(list1.isEmpty());
-//			
-//			// 9.clear() - remove all element
-//			list1.clear();
-//			
-//			// 10. isEmpty() - check list is empty
-//			System.out.println(list1.isEmpty());
-//			System.out.println(list1);
-//			
+			System.out.println("After remove: "+list1);	
+			// 10. isempty -
+			System.out.println(list1.isEmpty());
+			
+			// 9.clear() - remove all element
+			list1.clear();
+			
+			// 10. isEmpty() - check list is empty
+			System.out.println(list1.isEmpty());
+			System.out.println(list1);
+			
 
 	}
 
